@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "TradeViewer AdBlock Remover",
+  "version": "1.0",
+  "description": "移除TradeViewer网站的AdBlock检测弹窗",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.tradingview.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
